@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Quotes</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link type="javascript" >
+		<meta charset="utf-8">
+		<!--<script type="text/javascript" src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower" rel="stylesheet">-->
+	</head>
+
+	<body>
+
+	<div id="border">
+		<h1>Random Quotes Rewritten...</h1>
+
+		<div id="paragraph">
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+
+		<div id="button">
+		<button type="button">New Qoute - Click me!</button>
+		</div>
+
+		<div id="textarea">
+			<span>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span> 
+		</div>
+
+	</div>
+
+	<h5>Created by Megi!</h5>
+
+	<script type="text/javascript">
+
+	var quotes = ["Nie ma nikogo, kto lubiłby ból dla samego bólu, szukał go tylko po to, by go poczuć, po prostu dlatego, że to ból.", 
+		"Życie po prostu jest. Trzeba płynąć wraz z nim.", 
+		"Nasze życie jest takim, jakim uczyniły je nasze myśli.", 
+		"Są w życiu sytuacje, w których musisz sobie powiedzieć „dam radę” i iść dalej.", 
+		"Ludzie nigdy nie wiedzą, że są szczęśliwi. Wiedzą tylko, kiedy byli szczęśliwi.", 
+		"Szczęście nie polega na tym, żeby zdobyć to, czego pragniesz. Polega na tym, żeby pragnąć tego, co już masz.", 
+		"Nigdy, nigdy nie żałuj, że zrobiłaś cokolwiek, jeśli robiąc to, byłaś szczęśliwa."];
+
+
+	document.getElementById("button").onclick = function () {
+
+		var randomQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+
+		document.getElementById("textarea").innerHTML = randomQuotes;
+		
+	}
+
+	</script>
+
+	</body>
+</html>
